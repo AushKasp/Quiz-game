@@ -1,0 +1,55 @@
+print("Welcome to computer quiz")
+
+play=input("Do you want to play?  ")
+
+if play != "yes":
+    quit()
+
+z=0
+
+print("Let's START")
+
+print("-------------------------------------------")
+
+q1=input("""Q1: What is smallest memory in computer? \n
+    A.Bit    B.Bytes    C.MB    D.Kb  \n
+    Answer=  """)
+
+if q1=="A":
+    z+=1
+
+q2=input("""Q1: What is the Capital of INDIA \n
+    A.Delhi  B.Mumbai   C.Kolkata   D.Chennai \n
+    Answer= """)
+
+if q2=="A":
+    z+=1
+
+q3=input("""Q2: What is the Mother Language of INDIA \n
+    A.English  B.Hindi   C.Urdu   D.Arabic \n
+    Answer= """)
+
+if q3=="B":
+    z+=1
+
+
+
+if z==3:
+    print("-------------------------------------------")
+    print("You Got 3/3 Marks")
+    print("Congratulations on Full Marks ")
+
+elif z==2:
+    print("-------------------------------------------")
+    print("You got 2/3")
+    print("Your 1 answer is incorrect")
+
+elif z==1:
+    print("-------------------------------------------")
+    print("You got 1/3 Marks")
+    print("Study Hard for next Exam")
+
+elif z==0:
+    print("-------------------------------------------")
+    print("You got 0 Marks")
+    print("Fail")
